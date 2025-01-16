@@ -1,0 +1,14 @@
+<h1>新しいアイデアを追加</h1>
+<%= form_with model: @idea, local: true, authenticity_token: true  do |f| %>
+  <p>
+    <%= f.label :title, "タイトル" %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description, "説明" %><br>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "作成", data: { turbo: false } %>
+  </p>
+<% end %>

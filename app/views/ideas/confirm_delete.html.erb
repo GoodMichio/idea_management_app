@@ -1,0 +1,6 @@
+<h2>本当にこのアイデアを削除しますか？</h2>
+<p>タイトル: <%= @idea.title %></p>
+<p>内容: <%= @idea.description %></p>
+
+<%= button_to "削除", idea_path(@idea), method: :delete, data: { turbo: false, confirm: "本当に削除しますか？" } %>
+<%= link_to "キャンセル", ideas_path %>
