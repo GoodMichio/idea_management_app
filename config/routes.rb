@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  root "ideas#index" #一覧ページをルートページに設定
-  resources :ideas do   #CRUD操作用のルーティングを自動生成
+  root "ideas#index" # 一覧ページをルートページに設定
+  resources :ideas do   # CRUD操作用のルーティングを自動生成
     member do
       get :confirm_delete
     end

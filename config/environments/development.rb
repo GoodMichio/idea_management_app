@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Make code changes take effect immediately without server restart.
-#  config.enable_reloading = true
+  # config.enable_reloading = true
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -19,10 +19,10 @@ Rails.application.configure do
   config.force_ssl = false
 
   # 指定したホストを許可
-#  config.hosts << "3000-cs-69f7e4a0-cbb1-41fc-937f-2ace2c1b86b9.cs-asia-east1-cats.cloudshell.dev"
+  # config.hosts << "3000-cs-69f7e4a0-cbb1-41fc-937f-2ace2c1b86b9.cs-asia-east1-cats.cloudshell.dev"
 
   # HTTPSを強制
-#  config.force_ssl = true
+  # config.force_ssl = true
 
   # 開発環境でHTTPSを強制しない
   config.force_ssl = false
@@ -34,7 +34,6 @@ Rails.application.configure do
   # プレビュー用URLを許可
   config.hosts << /.*\.dev/
 
-  # 
   config.hosts << "localhost"
 
   config.hosts << "127.0.0.1"

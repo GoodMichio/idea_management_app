@@ -24,7 +24,7 @@ module IdeaManagementApp
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.action_controller.default_url_options = { host: '3000-cs-69f7e4a0-cbb1-41fc-937f-2ace2c1b86b9.cs-asia-east1-cats.cloudshell.dev', protocol: 'http' }
-
+    config.action_controller.default_url_options = { host:
+"3000-cs-69f7e4a0-cbb1-41fc-937f-2ace2c1b86b9.cs-asia-east1-cats.cloudshell.dev", protocol: "http" }
   end
 end
