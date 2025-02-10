@@ -7,6 +7,14 @@ class IdeasController < ApplicationController
     @idea = Idea.new
   end
 
+  def new_entry_manual
+    @idea = Idea.new
+  end
+
+  def new_entry_auto
+    @idea = Idea.new
+  end
+
   def create
     @idea = Idea.new(idea_params)
     if @idea.save

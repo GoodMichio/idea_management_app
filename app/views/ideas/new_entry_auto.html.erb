@@ -1,0 +1,14 @@
+<h2>AIからの提案で新規登録</h2>
+<%= form_with(model: @idea, url: ideas_path, method: :post) do |f| %>
+  <div>
+    <%= f.label :title, "タイトル" %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <p>AIが生成した内容がここに表示されます。</p>
+  </div>
+  <div>
+    <%= f.submit "登録する" %>
+  </div>
+<% end %>
+

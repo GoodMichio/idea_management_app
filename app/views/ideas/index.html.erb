@@ -1,5 +1,6 @@
 <h1>アイデア一覧</h1>
-<%= link_to '新しいアイデアを追加', new_idea_path %>
+<%= link_to '手動で新規登録', new_entry_manual_ideas_path, class: 'btn btn-primary' %>
+<%= link_to 'AIからの提案で新規登録', new_entry_auto_ideas_path, class: 'btn btn-success' %>
 <table>
   <thead>
     <tr>

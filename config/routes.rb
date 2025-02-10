@@ -17,5 +17,9 @@ Rails.application.routes.draw do
     member do
       get :confirm_delete
     end
+    collection do
+      get 'new_entry_manual'
+      get 'new_entry_auto'
+    end
   end
 end
