@@ -22,4 +22,7 @@ Rails.application.routes.draw do
       get 'new_entry_auto'
     end
   end
+
+  #フォームの送信先（action）は/ideas/create_autoになり、ideas_controller.rbのcreate_autoアクションが実行される
+  post 'ideas/create_auto', to: 'ideas#create_auto', as: 'create_auto_ideas'
 end
